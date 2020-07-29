@@ -56,6 +56,7 @@ TARGET_RECOVERY_DEVICE_DIRS += device/samsung/n80xx-common
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
   WITH_DEXPREOPT := true
+  DONT_DEXPREOPT_PREBUILTS := true
 endif
 
 # Recovery
